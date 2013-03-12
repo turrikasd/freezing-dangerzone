@@ -6,5 +6,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	Vector3 test = Vector3(1, 1, 1);
+
 	return 0;
 }
