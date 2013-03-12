@@ -13,3 +13,9 @@
 
 
 // TODO: reference additional headers your program requires here
+
+#ifdef DLL
+	#define DLLEI	__declspec(dllexport)
+#else
+	#define DLLEI	__declspec(dllimport)
+#endif
