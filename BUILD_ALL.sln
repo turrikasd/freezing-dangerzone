@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj", "{ABCBA1E4-E754-455B-8BC8-35026F4E67F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{61B08BCB-C5F5-4E96-9B70-0240CED8F4CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor", "Editor\Editor.vcxproj", "{D47F543D-1EF9-47DF-B2B8-ACA55AF8D0BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGL", "OpenGL\OpenGL.vcxproj", "{3ED1865D-35BB-44D5-A7AF-7AE34EF6D67D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABCBA1E4-E754-455B-8BC8-35026F4E67F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABCBA1E4-E754-455B-8BC8-35026F4E67F7}.Debug|Win32.Build.0 = Debug|Win32
+		{ABCBA1E4-E754-455B-8BC8-35026F4E67F7}.Release|Win32.ActiveCfg = Release|Win32
+		{ABCBA1E4-E754-455B-8BC8-35026F4E67F7}.Release|Win32.Build.0 = Release|Win32
+		{61B08BCB-C5F5-4E96-9B70-0240CED8F4CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61B08BCB-C5F5-4E96-9B70-0240CED8F4CC}.Debug|Win32.Build.0 = Debug|Win32
+		{61B08BCB-C5F5-4E96-9B70-0240CED8F4CC}.Release|Win32.ActiveCfg = Release|Win32
+		{61B08BCB-C5F5-4E96-9B70-0240CED8F4CC}.Release|Win32.Build.0 = Release|Win32
+		{D47F543D-1EF9-47DF-B2B8-ACA55AF8D0BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D47F543D-1EF9-47DF-B2B8-ACA55AF8D0BC}.Debug|Win32.Build.0 = Debug|Win32
+		{D47F543D-1EF9-47DF-B2B8-ACA55AF8D0BC}.Release|Win32.ActiveCfg = Release|Win32
+		{D47F543D-1EF9-47DF-B2B8-ACA55AF8D0BC}.Release|Win32.Build.0 = Release|Win32
+		{3ED1865D-35BB-44D5-A7AF-7AE34EF6D67D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3ED1865D-35BB-44D5-A7AF-7AE34EF6D67D}.Debug|Win32.Build.0 = Debug|Win32
+		{3ED1865D-35BB-44D5-A7AF-7AE34EF6D67D}.Release|Win32.ActiveCfg = Release|Win32
+		{3ED1865D-35BB-44D5-A7AF-7AE34EF6D67D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
