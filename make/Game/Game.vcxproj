@@ -142,8 +142,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\engine\targetver.h" />
     <ClInclude Include="..\..\src\game\Main.h" />
-    <ClInclude Include="..\..\src\game\targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\game\Main.cpp" />
