@@ -3,10 +3,17 @@
 
 #include "Main.h"
 
-int _tmain(int argc, _TCHAR* argv[])
+void HoldExec()
 {
 	int a;
 	std::cin >> a;
+}
 
+int _tmain(int argc, _TCHAR* argv[])
+{
+
+
+
+	HoldExec();
 	return 0;
 }

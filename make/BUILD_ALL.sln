@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{65AFF688-6F88-458D-AF7C-3BCA8610DBE0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGL", "OpenGL\OpenGL.vcxproj", "{24A9CB9E-78FB-4078-B72E-13CBCC268D63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -38,6 +40,17 @@ Global
 		{65AFF688-6F88-458D-AF7C-3BCA8610DBE0}.Release|Win32.ActiveCfg = Release|Win32
 		{65AFF688-6F88-458D-AF7C-3BCA8610DBE0}.Release|Win32.Build.0 = Release|Win32
 		{65AFF688-6F88-458D-AF7C-3BCA8610DBE0}.Release|x64.ActiveCfg = Release|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Debug|Win32.ActiveCfg = Debug|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Debug|Win32.Build.0 = Debug|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Debug|x64.ActiveCfg = Debug|x64
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Debug|x64.Build.0 = Debug|x64
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Release|Win32.ActiveCfg = Release|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Release|Win32.Build.0 = Release|Win32
+		{24A9CB9E-78FB-4078-B72E-13CBCC268D63}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

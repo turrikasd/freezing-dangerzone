@@ -23,6 +23,8 @@
     <ClCompile Include="..\..\src\engine\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\Engine.h" />
+    <ClInclude Include="..\..\src\engine\DataTypes\Vector3.h" />
     <ClInclude Include="..\..\src\engine\Main.h" />
     <ClInclude Include="..\..\src\engine\targetver.h" />
   </ItemGroup>
