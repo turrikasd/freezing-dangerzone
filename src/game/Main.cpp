@@ -3,6 +3,8 @@
 
 #include "Main.h"
 
+using namespace std;
+
 void HoldExec()
 {
 	int a;
@@ -12,7 +14,7 @@ void HoldExec()
 int _tmain(int argc, _TCHAR* argv[])
 {
 
-
+	cout << Vector3(1, 1, 1) << endl;
 
 	HoldExec();
 	return 0;
