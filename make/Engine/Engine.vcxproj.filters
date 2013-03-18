@@ -41,5 +41,8 @@
     <ClInclude Include="..\..\src\engine\DataTypes\Vector2.h">
       <Filter>Header Files\DataTypes</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\engine\DataTypes\Quaternion.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
