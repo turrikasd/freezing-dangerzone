@@ -15,6 +15,8 @@ struct ENGINE_EI Quaternion
 	Quaternion(float x, float y, float z, float w) : x(x), y(y), z(z), w(w) {}
 
 	friend std::ostream& operator << (std::ostream& os, const Quaternion q);
+
+	static Quaternion Quaternion::Zero() { return Quaternion(0.0f, 0.0f, 0.0f, 0.0f); }
 };
 
 std::ostream& operator << (std::ostream& os, const Quaternion q)
