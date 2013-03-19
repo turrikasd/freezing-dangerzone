@@ -13,11 +13,13 @@ void HoldExec()
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	WindowMgr* windowMgr = new WindowMgr();
+	windowMgr->Initialize();
 
-	cout << Vector3(1, 1, 1) << endl;
-	cout << Vector3::Zero() << endl;
-	cout << Quaternion(1, 2, 3, 4) << endl;
+	// Delete
 
-	HoldExec();
+	windowMgr->Destroy();
+	delete windowMgr;
+
 	return 0;
 }
