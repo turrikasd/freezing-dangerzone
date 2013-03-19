@@ -15,6 +15,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 
 	cout << Vector3(1, 1, 1) << endl;
+	cout << Vector3::Zero() << endl;
 	cout << Quaternion(1, 2, 3, 4) << endl;
 
 	HoldExec();
