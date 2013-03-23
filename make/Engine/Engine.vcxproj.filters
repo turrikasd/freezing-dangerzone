@@ -22,5 +22,8 @@
     <ClInclude Include="..\..\include\Engine.h" />
     <ClInclude Include="..\..\src\engine\Main.h" />
     <ClInclude Include="..\..\src\engine\targetver.h" />
+    <ClInclude Include="..\..\src\engine\DataTypes\Texture2D.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

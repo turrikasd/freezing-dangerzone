@@ -25,6 +25,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\include\Engine.h" />
     <ClInclude Include="..\..\src\engine\DataTypes\Quaternion.h" />
+    <ClInclude Include="..\..\src\engine\DataTypes\Texture2D.h" />
     <ClInclude Include="..\..\src\engine\DataTypes\Vector2.h" />
     <ClInclude Include="..\..\src\engine\DataTypes\Vector3.h" />
     <ClInclude Include="..\..\src\engine\Main.h" />

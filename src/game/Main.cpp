@@ -13,13 +13,13 @@ void HoldExec()
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	WindowMgr* windowMgr = new WindowMgr();
+	/*WindowMgr* windowMgr = new WindowMgr();
 	windowMgr->Initialize();
 
 	// Delete
 
 	windowMgr->Destroy();
-	delete windowMgr;
+	delete windowMgr;*/
 
 	return 0;
 }
