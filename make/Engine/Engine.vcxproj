@@ -19,6 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\engine\DataTypes\Quaternion.cpp" />
+    <ClCompile Include="..\..\src\engine\DataTypes\Texture2D.cpp" />
+    <ClCompile Include="..\..\src\engine\DataTypes\Vector2.cpp" />
+    <ClCompile Include="..\..\src\engine\DataTypes\Vector3.cpp" />
     <ClCompile Include="..\..\src\engine\dllmain.cpp" />
     <ClCompile Include="..\..\src\engine\Main.cpp" />
   </ItemGroup>

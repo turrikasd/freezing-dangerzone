@@ -11,15 +11,7 @@ void HoldExec()
 	std::cin >> a;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR cmdLine, int nShowCmd)
 {
-	/*WindowMgr* windowMgr = new WindowMgr();
-	windowMgr->Initialize();
-
-	// Delete
-
-	windowMgr->Destroy();
-	delete windowMgr;*/
-
 	return 0;
 }

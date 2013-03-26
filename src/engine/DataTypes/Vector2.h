@@ -23,8 +23,3 @@ struct ENGINE_EI Vector2
 	static Vector2 Vector2::Right() { return Vector2(1.0f, 0.0f); }
 	static Vector2 Vector2::Left() { return Vector2(-1.0f, 0.0f); }
 };
-
-std::ostream& operator << (std::ostream& os, const Vector2 v2)
-{
-	return os << "{" << "X:" << v2.x << "|Y:" << v2.y << "}";
-}

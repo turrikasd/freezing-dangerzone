@@ -18,8 +18,3 @@ struct ENGINE_EI Quaternion
 
 	static Quaternion Quaternion::Zero() { return Quaternion(0.0f, 0.0f, 0.0f, 0.0f); }
 };
-
-std::ostream& operator << (std::ostream& os, const Quaternion q)
-{
-	return os << "{" << "X:" << q.x << "|Y:" << q.y << "|Z:" << q.z << "|W:" << q.w << "}";
-}

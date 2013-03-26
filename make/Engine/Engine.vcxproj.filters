@@ -8,6 +8,18 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\dllmain.cpp" />
     <ClCompile Include="..\..\src\engine\Main.cpp" />
+    <ClCompile Include="..\..\src\engine\DataTypes\Vector3.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\DataTypes\Vector2.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\DataTypes\Quaternion.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\DataTypes\Texture2D.cpp">
+      <Filter>DataTypes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\engine\DataTypes\Vector3.h">
