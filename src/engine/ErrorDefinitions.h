@@ -1,0 +1,5 @@
+#define NOERROR							0x0000
+
+// Window Creation
+#define REGISTER_WINDOW_CLASS_ERROR		0x0001
+#define INITIALIZE_WINDOW_ERROR			0x0002
