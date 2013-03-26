@@ -20,6 +20,7 @@
     <ClCompile Include="..\..\src\engine\DataTypes\Texture2D.cpp">
       <Filter>DataTypes</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\engine\Error.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\engine\DataTypes\Vector3.h">
@@ -37,5 +38,7 @@
     <ClInclude Include="..\..\src\engine\DataTypes\Texture2D.h">
       <Filter>DataTypes</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\engine\ErrorDefinitions.h" />
+    <ClInclude Include="..\..\src\engine\Error.h" />
   </ItemGroup>
 </Project>

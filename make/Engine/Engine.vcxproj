@@ -24,6 +24,7 @@
     <ClCompile Include="..\..\src\engine\DataTypes\Vector2.cpp" />
     <ClCompile Include="..\..\src\engine\DataTypes\Vector3.cpp" />
     <ClCompile Include="..\..\src\engine\dllmain.cpp" />
+    <ClCompile Include="..\..\src\engine\Error.cpp" />
     <ClCompile Include="..\..\src\engine\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -32,6 +33,8 @@
     <ClInclude Include="..\..\src\engine\DataTypes\Texture2D.h" />
     <ClInclude Include="..\..\src\engine\DataTypes\Vector2.h" />
     <ClInclude Include="..\..\src\engine\DataTypes\Vector3.h" />
+    <ClInclude Include="..\..\src\engine\Error.h" />
+    <ClInclude Include="..\..\src\engine\ErrorDefinitions.h" />
     <ClInclude Include="..\..\src\engine\Main.h" />
     <ClInclude Include="..\..\src\engine\targetver.h" />
   </ItemGroup>
@@ -51,7 +54,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
