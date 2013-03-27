@@ -7,10 +7,7 @@ int WindowMgr::Initialize(HINSTANCE applicationInstance)
 	hInstance = applicationInstance;
 
 	error = SetupWindow();
-	if (!(error == NOERROR))
-		return error;
-
-	return WindowLoop();
+	return error;
 }
 
 void WindowMgr::Destroy()
@@ -55,24 +52,32 @@ int WindowMgr::SetupWindow()
 	return NOERROR;
 }
 
-int WindowMgr::WindowLoop()
+int WindowMgr::Run()
 {
+	int error = NOERROR;
 	done = false; // Init loop condition bool
 
 	while (!done)
 	{
-		PeekMessage(&msg, NULL, NULL, NULL, PM_REMOVE); // check for message, remove after
-		if (msg.message == WM_QUIT) // Check if we should quit
-			done = true;
-		else
+		if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
 		{
-			// Translate and dispatch to event que
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
+
+		if (msg.message == WM_QUIT)
+		{
+			done = true;
+		}
+		else
+		{
+			// error = Frame();
+			// if (!(error == NOERROR))
+			//	done = true;
+		}
 	}
 
-	return NOERROR;
+	return error;
 }
 
 LRESULT CALLBACK WndProc(HWND wHwnd, UINT wMessage, WPARAM wWparam, LPARAM wLparam)

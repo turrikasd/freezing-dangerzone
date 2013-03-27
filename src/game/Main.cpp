@@ -15,12 +15,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR cmdLine, 
 {
 	int error;
 
-	System* systemMgr = new System();
-	error = systemMgr->Initialize(hInstance);
+	System* systemC = new System();
+	error = systemC->Initialize(hInstance);
 
 	// Cleanup
-	systemMgr->Destroy();
-	delete systemMgr;
+	systemC->Destroy();
+	delete systemC;
 
 	return error;
 }

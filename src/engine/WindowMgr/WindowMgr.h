@@ -17,7 +17,7 @@ class ENGINE_EI WindowMgr
 public:
 	int Initialize(HINSTANCE applicationInstance);
 	void Destroy();
-	
+	int Run();
 
 private:
 	int SetupWindow();
