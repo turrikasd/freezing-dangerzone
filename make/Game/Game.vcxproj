@@ -144,11 +144,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\src\engine\targetver.h" />
     <ClInclude Include="..\..\src\game\Main.h" />
-    <ClInclude Include="..\..\src\game\WindowMgr\WindowMgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\game\Main.cpp" />
-    <ClCompile Include="..\..\src\game\WindowMgr\WindowMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">

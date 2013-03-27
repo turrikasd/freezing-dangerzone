@@ -24,8 +24,9 @@
     <ClCompile Include="..\..\src\engine\DataTypes\Vector2.cpp" />
     <ClCompile Include="..\..\src\engine\DataTypes\Vector3.cpp" />
     <ClCompile Include="..\..\src\engine\dllmain.cpp" />
-    <ClCompile Include="..\..\src\engine\Error.cpp" />
+    <ClCompile Include="..\..\src\engine\ErrorHandling\Error.cpp" />
     <ClCompile Include="..\..\src\engine\Main.cpp" />
+    <ClCompile Include="..\..\src\engine\WindowMgr\WindowMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\Engine.h" />
@@ -33,10 +34,11 @@
     <ClInclude Include="..\..\src\engine\DataTypes\Texture2D.h" />
     <ClInclude Include="..\..\src\engine\DataTypes\Vector2.h" />
     <ClInclude Include="..\..\src\engine\DataTypes\Vector3.h" />
-    <ClInclude Include="..\..\src\engine\Error.h" />
-    <ClInclude Include="..\..\src\engine\ErrorDefinitions.h" />
+    <ClInclude Include="..\..\src\engine\ErrorHandling\Error.h" />
+    <ClInclude Include="..\..\src\engine\ErrorHandling\ErrorDefinitions.h" />
     <ClInclude Include="..\..\src\engine\Main.h" />
     <ClInclude Include="..\..\src\engine\targetver.h" />
+    <ClInclude Include="..\..\src\engine\WindowMgr\WindowMgr.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{65AFF688-6F88-458D-AF7C-3BCA8610DBE0}</ProjectGuid>

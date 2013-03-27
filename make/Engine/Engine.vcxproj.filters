@@ -4,6 +4,12 @@
     <Filter Include="DataTypes">
       <UniqueIdentifier>{9d3f1485-a8ab-4b67-962a-aac9c0caefd2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WindowMgr">
+      <UniqueIdentifier>{172d4867-0613-476a-9336-7c808f4b63b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ErrorHandling">
+      <UniqueIdentifier>{a0e40572-543c-4c45-8919-ad2db1f61807}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\dllmain.cpp" />
@@ -20,7 +26,12 @@
     <ClCompile Include="..\..\src\engine\DataTypes\Texture2D.cpp">
       <Filter>DataTypes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\engine\Error.cpp" />
+    <ClCompile Include="..\..\src\engine\WindowMgr\WindowMgr.cpp">
+      <Filter>WindowMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\ErrorHandling\Error.cpp">
+      <Filter>ErrorHandling</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\engine\DataTypes\Vector3.h">
@@ -38,7 +49,14 @@
     <ClInclude Include="..\..\src\engine\DataTypes\Texture2D.h">
       <Filter>DataTypes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\engine\ErrorDefinitions.h" />
-    <ClInclude Include="..\..\src\engine\Error.h" />
+    <ClInclude Include="..\..\src\engine\WindowMgr\WindowMgr.h">
+      <Filter>WindowMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\ErrorHandling\Error.h">
+      <Filter>ErrorHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\ErrorHandling\ErrorDefinitions.h">
+      <Filter>ErrorHandling</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
