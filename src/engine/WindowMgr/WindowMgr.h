@@ -21,7 +21,6 @@ public:
 
 private:
 	int SetupWindow();
-	int WindowLoop();
 
 	HINSTANCE hInstance;
 	WNDCLASSEX windowClass;
