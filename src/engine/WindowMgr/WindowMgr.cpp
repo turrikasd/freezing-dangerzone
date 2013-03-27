@@ -23,7 +23,6 @@ int WindowMgr::Initialize(HINSTANCE applicationInstance)
 		return INPUTCLASS_INITIALIZE_ERROR;
 
 	error = input->Initialize();
-
 	if (!(error == NOERROR))
 		return error;
 
