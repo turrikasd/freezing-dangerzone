@@ -21,10 +21,12 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\opengl\dllmain.cpp" />
     <ClCompile Include="..\..\src\opengl\OpenGL.cpp" />
+    <ClCompile Include="..\..\src\opengl\OpenGLClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\OpenGL.h" />
     <ClInclude Include="..\..\src\opengl\Main.h" />
+    <ClInclude Include="..\..\src\opengl\OpenGLClass.h" />
     <ClInclude Include="..\..\src\opengl\targetver.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -108,6 +110,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENGL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

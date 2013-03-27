@@ -2,7 +2,10 @@
 
 int WindowMgr::Initialize(HINSTANCE applicationInstance)
 {
-	int error;
+	int error, screenWidth, screenHeight;
+
+	screenWidth = 0;
+	screenHeight = 0;
 
 	hInstance = applicationInstance;
 
@@ -78,6 +81,11 @@ int WindowMgr::Run()
 	}
 
 	return error;
+}
+
+LRESULT CALLBACK WindowMgr::MessageHandler(HWND mHwnd, UINT mMessage, WPARAM mWparam, LPARAM mLparam)
+{
+	return 0;
 }
 
 LRESULT CALLBACK WndProc(HWND wHwnd, UINT wMessage, WPARAM wWparam, LPARAM wLparam)

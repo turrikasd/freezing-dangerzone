@@ -42,6 +42,11 @@
     <ClInclude Include="..\..\src\engine\targetver.h" />
     <ClInclude Include="..\..\src\engine\WindowMgr\WindowMgr.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenGL\OpenGL.vcxproj">
+      <Project>{24a9cb9e-78fb-4078-b72e-13cbcc268d63}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{65AFF688-6F88-458D-AF7C-3BCA8610DBE0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -123,7 +128,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\Documents\GitHub\freezing-dangerzone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

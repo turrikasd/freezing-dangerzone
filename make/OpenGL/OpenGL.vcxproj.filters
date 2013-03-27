@@ -3,10 +3,12 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\opengl\dllmain.cpp" />
     <ClCompile Include="..\..\src\opengl\OpenGL.cpp" />
+    <ClCompile Include="..\..\src\opengl\OpenGLClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\opengl\Main.h" />
     <ClInclude Include="..\..\include\OpenGL.h" />
     <ClInclude Include="..\..\src\opengl\targetver.h" />
+    <ClInclude Include="..\..\src\opengl\OpenGLClass.h" />
   </ItemGroup>
 </Project>
