@@ -8,12 +8,12 @@ int System::Initialize(HINSTANCE hInstance)
 	error = windowMgr->Initialize(hInstance);
 
 	// Check for error. Jump to message loop if no error initializing
-	if (!(error == NOERROR))
+	if (error)
 		DisplayError(error);
 	else
 		error = windowMgr->Run();
 
-	if (!(error == NOERROR)) // Check for error in the message loop
+	if (error) // Check for error in the message loop
 		DisplayError(error);
 
 	return error;

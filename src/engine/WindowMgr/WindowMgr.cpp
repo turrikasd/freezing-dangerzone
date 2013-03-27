@@ -14,7 +14,7 @@ int WindowMgr::Initialize(HINSTANCE applicationInstance)
 
 	// Setup the window and init graphics API
 	error = SetupWindows(screenWidth, screenHeight);
-	if (!(error == NOERROR))
+	if (error)
 		return error;
 
 	// Init Input and Graphics objects
@@ -23,7 +23,7 @@ int WindowMgr::Initialize(HINSTANCE applicationInstance)
 		return INPUTCLASS_INITIALIZE_ERROR;
 
 	error = input->Initialize();
-	if (!(error == NOERROR))
+	if (error)
 		return error;
 
 	graphics = new GraphicsClass();
@@ -124,7 +124,7 @@ int WindowMgr::Run()
 		else
 		{
 			error = Frame();
-			if (!(error == NOERROR))
+			if (error)
 				done = true;
 		}
 	}
