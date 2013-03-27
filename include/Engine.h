@@ -8,3 +8,5 @@
 #include "../src/engine/ErrorHandling/Error.h"
 #include "../src/engine/WindowMgr/WindowMgr.h"
 #include "../src/engine/System/System.h"
+#include "../src/engine/Input/InputClass.h"
+#include "../src/engine/Graphics/GraphicsClass.h"

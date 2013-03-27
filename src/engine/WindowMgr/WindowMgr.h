@@ -8,7 +8,7 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
-#include "../ErrorHandling/ErrorDefinitions.h"
+#include "Engine.h"
 #include "OpenGL.h"
 
 class ENGINE_EI WindowMgr
@@ -21,15 +21,21 @@ public:
 	LRESULT CALLBACK MessageHandler(HWND mHwnd, UINT mMessage, WPARAM mWparam, LPARAM mLparam);
 
 private:
-	int SetupWindow();
+	int SetupWindows(int& screenWidth, int& screenHeight);
+	void DestroyWindows();
+	int Frame();
 
+private:
 	HINSTANCE hInstance;
 	WNDCLASSEX windowClass;
 	HWND hWnd;
+	char* applicationTitle;
 	MSG msg;
 	bool done;
 
-	
+	OpenGLClass* openGL;
+	InputClass* input;
+	GraphicsClass* graphics;
 };
 
 // Function Prototypes

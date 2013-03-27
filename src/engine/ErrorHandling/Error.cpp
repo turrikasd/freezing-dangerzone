@@ -20,6 +20,21 @@ void DisplayError(int error)
 		errorTitle = "ERROR: 0x0002";
 		break;
 
+	case OPENGLCLASS_INITIALIZE_ERROR:
+		errorText = "OPENGLCLASS_INITIALIZE_ERROR";
+		errorTitle = "ERROR: 0x0100";
+		break;
+
+	case INPUTCLASS_INITIALIZE_ERROR:
+		errorText = "INPUTCLASS_INITIALIZE_ERROR";
+		errorTitle = "ERROR: 0x0003";
+		break;
+
+	case GRAPHICSCLASS_INITIALIZE_ERROR:
+		errorText = "GRAPHICSCLASS_INITIALIZE_ERROR";
+		errorTitle = "ERROR: 0x0004";
+		break;
+
 	default:
 		errorText = "Unknown Error";
 		errorTitle = "ERROR: 0x0000";

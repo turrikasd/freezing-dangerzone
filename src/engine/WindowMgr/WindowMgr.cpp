@@ -2,23 +2,64 @@
 
 int WindowMgr::Initialize(HINSTANCE applicationInstance)
 {
-	int error, screenWidth, screenHeight;
+	hInstance = applicationInstance; // Save this in the class for later use
 
+	int error, screenWidth, screenHeight;
 	screenWidth = 0;
 	screenHeight = 0;
 
-	hInstance = applicationInstance;
+	openGL = new OpenGLClass();
+	if (!openGL)
+		return OPENGLCLASS_INITIALIZE_ERROR;
 
-	error = SetupWindow();
+	// Setup the window and init graphics API
+	error = SetupWindows(screenWidth, screenHeight);
+	if (!(error == NOERROR))
+		return error;
+
+	// Init Input and Graphics objects
+	input = new InputClass();
+	if (!input)
+		return INPUTCLASS_INITIALIZE_ERROR;
+
+	error = input->Initialize();
+
+	if (!(error == NOERROR))
+		return error;
+
+	graphics = new GraphicsClass();
+	if (!graphics)
+		return GRAPHICSCLASS_INITIALIZE_ERROR;
+
+	error = graphics->Initialize(); // No need to check for error as it will be returned anyways
+
 	return error;
 }
 
 void WindowMgr::Destroy()
 {
-	// Todo
+	// Shutdown and release everything that exists
+	if (graphics)
+	{
+		graphics->Destroy();
+		delete graphics;
+	}
+
+	if (input)
+	{
+		delete input;
+	}
+
+	if (openGL)
+	{
+		//openGL->Destroy();
+		delete openGL;
+	}
+
+	DestroyWindows();
 }
 
-int WindowMgr::SetupWindow()
+int WindowMgr::SetupWindows(int& screenWidth, int& screenHeight)
 {
 	// Fill window class for DefaultWindow
 	windowClass.cbSize = sizeof(WNDCLASSEX);
@@ -40,7 +81,7 @@ int WindowMgr::SetupWindow()
 	// Drive a window from the DefaultWindow class
 	hWnd = CreateWindowEx(NULL,
 						  "DefaultWindow", // Window Class
-						  "Game Window", // Title
+						  applicationTitle, // Title
 						  WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_SYSMENU, // Style
 						  100, 100, // Position
 						  800, 600, // Dimensions
