@@ -6,7 +6,8 @@
 #define ENGINE_EI __declspec(dllimport)
 #endif
 
-#include "Engine.h"
+#include "../WindowMgr/WindowMgr.h"
+#include "../ErrorHandling/Error.h"
 
 class ENGINE_EI System
 {

@@ -6,6 +6,8 @@
 #define ENGINE_EI __declspec(dllimport)
 #endif
 
+#include "../ErrorHandling/Error.h"
+
 class ENGINE_EI InputClass
 {
 public:

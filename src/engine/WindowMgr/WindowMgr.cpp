@@ -30,7 +30,7 @@ int WindowMgr::Initialize(HINSTANCE applicationInstance)
 	if (!graphics)
 		return GRAPHICSCLASS_INITIALIZE_ERROR;
 
-	error = graphics->Initialize(); // No need to check for error as it will be returned anyways
+	error = graphics->Initialize(openGL, hWnd); // No need to check for error as it will be returned anyways
 
 	return error;
 }
@@ -95,6 +95,15 @@ int WindowMgr::SetupWindows(int& screenWidth, int& screenHeight)
 	return NOERROR;
 }
 
+void WindowMgr::DestroyWindows()
+{
+}
+
+int WindowMgr::Frame()
+{
+	return NOERROR;
+}
+
 int WindowMgr::Run()
 {
 	int error = NOERROR;
@@ -114,9 +123,9 @@ int WindowMgr::Run()
 		}
 		else
 		{
-			// error = Frame();
-			// if (!(error == NOERROR))
-			//	done = true;
+			error = Frame();
+			if (!(error == NOERROR))
+				done = true;
 		}
 	}
 

@@ -8,7 +8,9 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
-#include "Engine.h"
+#include "../Input/InputClass.h"
+#include "../Graphics/GraphicsClass.h"
+#include "../ErrorHandling/Error.h"
 #include "OpenGL.h"
 
 class ENGINE_EI WindowMgr
