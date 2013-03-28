@@ -35,6 +35,11 @@ void DisplayError(int error)
 		errorTitle = "ERROR: 0x0004";
 		break;
 
+	case USER_ESCAPE_DURING_FRAME_DRAW:
+		errorText = "USER_ESCAPE_DURING_FRAME_DRAW";
+		errorTitle = "ERROR: 0x0005";
+		break;
+
 	default:
 		errorText = "Unknown Error";
 		errorTitle = "ERROR: 0x0000";

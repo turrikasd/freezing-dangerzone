@@ -17,4 +17,6 @@ public:
 
 	int Initialize(OpenGLClass* openGL, HWND hWnd);
 	void Destroy();
+
+	int Frame();
 };

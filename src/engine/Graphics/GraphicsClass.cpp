@@ -8,3 +8,8 @@ int GraphicsClass::Initialize(OpenGLClass* openGL, HWND hWnd)
 void GraphicsClass::Destroy()
 {
 }
+
+int GraphicsClass::Frame()
+{
+	return NOERROR;
+}

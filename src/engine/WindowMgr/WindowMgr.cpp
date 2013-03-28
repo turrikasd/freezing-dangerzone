@@ -101,7 +101,13 @@ void WindowMgr::DestroyWindows()
 
 int WindowMgr::Frame()
 {
-	return NOERROR;
+	bool error;
+
+	// Check the Input object for if the user has hit escape
+	if (input->IsKeyDown(VK_ESCAPE))
+		return USER_ESCAPE_DURING_FRAME_DRAW;
+
+	return graphics->Frame(); // Tell graphics obj to draw the frame, return any errors that occur down the chain
 }
 
 int WindowMgr::Run()
@@ -123,8 +129,7 @@ int WindowMgr::Run()
 		}
 		else
 		{
-			error = Frame();
-			if (error)
+			if (Frame()) // False if user exit's during Frame()
 				done = true;
 		}
 	}

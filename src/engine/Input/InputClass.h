@@ -13,4 +13,11 @@ class ENGINE_EI InputClass
 public:
 
 	int Initialize();
+
+	bool IsKeyDown(char key);
+	bool IsKeyUp(char key);
+
+private:
+
+	char keys[4096];
 };
